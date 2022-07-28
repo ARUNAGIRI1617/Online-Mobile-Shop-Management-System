@@ -1,0 +1,32 @@
+<ul id="overlay_list">
+  <% for( const mobile of mobiles) {%>
+  <li  id="overlay_mobile<%= mobile.sno %>" class="overlay">
+      <div id="backdrop<%= mobile.sno %>" class="backdrop_style"></div>
+      <div id="full_spec_overlay<%= mobile.sno %>" class="full_spec_overlay_style">
+        <a id="back_arrow<%= mobile.sno %>" class="back_arrow_style"> &larr;</a>
+        <img
+          src="<%= mobile.mobileimglink %>"
+          alt="<%= mobile.mobilename %>"
+        />
+        <h5 id="mobile<%= mobile.sno %>name"><%= mobile.mobilename %></h5>
+        <p id="mobile<%= mobile.sno %>specs"><%= mobile.specs  %> </p>
+        <p id="mobile<%= mobile.sno %>price"><span>&#x20B9 </span><%= mobile.price %></p>
+        <p id="mobile<%= mobile.sno %>stock"><%= mobile.stock %> </p>
+
+        <div>
+          <!-- <% if(login === 0)  { %>
+            <a href="/">
+            <button name='addtocart' type="button" class="btns">
+              Add to Cart</button
+            ><button type="button" class="btns">Buy</button>
+            </a>
+            <% } %>  -->
+          <form action="/index" method="POST">
+          <button name='addtocart' type="submit" value="<%= mobile.mobilename %>" class="btns">
+            Add to Cart</button
+          ><button type="button" class="btns">Buy</button></form>
+        </div>
+      </div>
+  </li>
+  <% } %>
+</ul>

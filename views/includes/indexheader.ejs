@@ -1,0 +1,30 @@
+<h1>Online Mobile Shop</h1>
+<form class="d-flex">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<ul id="navs">
+  <li>
+    <a href="/index"><nav>Home</nav></a>
+  </li>
+  <li>
+    <a href="#mobile_page"><nav>Mobiles</nav></a>
+  </li>
+  <li>
+    <% if (login ===0) { %>
+    <a href="/"><nav>Account</nav></a>
+    <% } else {%> <% for ( const user of enteredUser) { %>
+    <a href=""
+      ><div class="dropdown">
+        <nav class="dropdown_btn"><%= user.username %></nav>
+        <div class="dropdown_content">
+          <span><%= user.useremail %></span>
+          <a href="/changepwd">Change Password</a>
+          <a href="/cart">Carts</a>
+          <a href="/logout">Log Out</a>
+        </div>
+      </div></a
+    >
+    <% } } %>
+  </li>
+</ul>

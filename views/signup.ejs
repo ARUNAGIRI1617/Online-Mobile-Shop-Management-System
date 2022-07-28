@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/signup.css" rel="stylesheet" />
+    <link href="styles/showpwd.css" rel="stylesheet" />
+    <script src="scripts/showpwd.js" defer></script>
+
+    <title>Online mobile shop</title>
+  </head>
+  <body>
+    <header>
+      <h1>Online Mobile Shop</h1>
+    </header>
+    <main>
+      <section id="config_form">
+        <div id="config">
+          <form action="/signup" method="POST">
+            <a id="back_arrow" href="/"> &larr;</a>
+            <div id="name">
+              <label for="userName">Name </label>
+              <input
+                type="text"
+                name="username"
+                id="userName"
+                class="inputdata"
+                required
+              />
+            </div>
+            <div id="email">
+              <label for="userEmail">Email </label>
+              <input
+                type="email"
+                name="useremail"
+                id="userEmail"
+                class="inputdata"
+                required
+              />
+            </div>
+            <div id="pwd">
+              <label for="userPwd">Password </label>
+              <input
+                type="password"
+                name="userpwd"
+                id="userPwd"
+                class="inputdata"
+                required
+              />
+              <div class="show_pwd_container">
+                <input
+                  type="checkbox"
+                  onclick="showUserPwd()"
+                  class="show_pwd" id="showPwd"
+                /><label for="showPwd">Show Password</label>
+              </div>
+            </div>
+            <div id="formbtn">
+              <button>Create Account</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

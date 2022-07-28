@@ -1,0 +1,32 @@
+#mobiles ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  /* #mobiles ul li {
+    margin: 0 1rem;
+  } */
+  
+  .mobile {
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-out;
+  }
+  
+  #mobilespecs {
+    display: none;
+  }
+  
+  .mobile:hover {
+    transform: scale(1.1);
+  }
+  
+  .mobile img {
+    max-height: 7rem;
+  }
+  

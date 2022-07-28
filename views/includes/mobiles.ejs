@@ -1,0 +1,24 @@
+
+  <div id="mobiles">
+    <div >
+      <ul>
+        <% for( const mobile of mobiles) {%>
+        <a href="#overlay_mobile<%= mobile.sno %>"   id="mobile<%= mobile.sno %>" class="mobile open_overlay" data-mobileno="<%= mobile.sno %>">
+         <li class="open_overlay" data-mobileno="<%= mobile.sno %>">
+          <div class="open_overlay" data-mobileno="<%= mobile.sno %>">
+          <img
+            src="<%= mobile.mobileimglink  %> "
+            alt="<%= mobile.mobilename %> "
+            data-mobileno="<%= mobile.sno %>"
+            class="open_overlay"
+          />
+          <h5 class="open_overlay" data-mobileno="<%= mobile.sno %>"><%= mobile.mobilename %></h5>
+          <p class="open_overlay" data-mobileno="<%= mobile.sno %>"><span>&#x20B9 </span><%= mobile.price %></p>
+          </div>
+         </li>
+         </a>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+

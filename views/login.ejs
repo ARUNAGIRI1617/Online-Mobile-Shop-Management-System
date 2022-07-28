@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/login.css" rel="stylesheet" />
+    <link href="styles/showpwd.css" rel="stylesheet" />
+    <script src="scripts/incorrect.js" defer></script>
+    <script src="scripts/showpwd.js" defer></script>
+    <title>Online mobile shop</title>
+  </head>
+  <body>
+    <header>
+      <h1>Online Mobile Shop</h1>
+    </header>
+    <main>
+      <section id="config_form">
+        <div id="config">
+          <form action="/" method="POST">
+            <div id="email">
+              <label for="userEmail">Email </label>
+              <input
+                type="email"
+                name="useremail"
+                id="userEmail"
+                class="inputdata"
+                required
+              />
+            </div>
+            <div id="pwd">
+              <label for="userPwd">Password </label>
+              <input
+                type="password"
+                name="userpwd"
+                id="userPwd"
+                class="inputdata"
+                required
+              />
+              <div class="show_pwd_container">
+                <input
+                  type="checkbox"
+                  onclick="showUserPwd()"
+                  class="show_pwd" id="showPwd"
+                /><label for="showPwd">Show Password</label>
+              </div>
+            </div>
+            <p id="incorrect"><%= incorrect %></p>
+            <div id="formbtn">
+              <button type="submit">Log in</button>
+            </div>
+          </form>
+        </div>
+        <div id="forgotpwd">
+          <a href="/forgotpwd">Forgot Password?</a>
+        </div>
+        <div id="signup">
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

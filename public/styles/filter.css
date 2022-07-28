@@ -1,0 +1,72 @@
+aside {
+    max-width: 20rem;
+    max-height: 30rem;
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    padding: 2rem;
+    border-radius: 35px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-right: 2rem;
+  }
+  
+  #filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #brands {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .brandName {
+    /* display: flex; */
+    margin: 0.5rem;
+    max-width: 10rem;
+    /* align-items: center;
+    justify-content: flex-start; */
+  }
+  
+  .brandName label {
+    padding-left: 1rem;
+  }
+  
+  .filter_color {
+    color: blue;
+  }
+  
+  #price_range {
+    margin-bottom: 1rem;
+  }
+  
+  #price_range #min-max-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #price_range #price {
+    display: block;
+    width: 100%;
+  }
+  
+  #price_range #filter-price {
+    text-align: center;
+  }
+  
+  .btns {
+    width: 5rem;
+    padding: 0.25rem;
+    border-radius: 5px;
+    background-color: var(--secondary_color);
+    color: var(--primary_color);
+    border: none;
+    font: inherit;
+    transition: background-color 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .btns:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.15);
+  }

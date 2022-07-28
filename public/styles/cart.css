@@ -1,0 +1,78 @@
+#main_content {
+  padding: 0 5rem;
+}
+
+hr {
+    color: rgba(0,0,0,0.5);
+}
+
+h2 {
+  text-align: center;
+  margin: 20rem auto;
+}
+
+.btns {
+  width: 5rem;
+  max-width: 20rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+  border: none;
+  font: inherit;
+  transition: background-color 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  margin: 1rem;
+}
+
+.btns:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.15);
+}
+
+#mobile_page {
+  flex-direction: column;
+}
+
+#mobiles  {
+    display: block;
+    margin: auto;
+}
+
+#mobiles ul {
+  margin : 5rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+#mobiles .btns {
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+}
+
+#cart_btn {
+    width: 10rem;
+}
+
+#total {
+  text-align: center;
+}
+
+#total_price  {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#total .btns {
+  width: 10rem;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+}
+
+
+.full_spec_overlay_style .btns {
+  margin: 1rem;
+  width: 10rem;
+}

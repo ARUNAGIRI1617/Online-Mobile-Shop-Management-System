@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/signup.css" rel="stylesheet" />
+    <link href="styles/showpwd.css" rel="stylesheet" />
+
+    <script src="scripts/incorrect.js" defer></script>
+    <script src="scripts/showpwd.js" defer></script>
+
+    <title>Online mobile shop</title>
+  </head>
+  <body>
+    <header>
+      <h1>Online Mobile Shop</h1>
+    </header>
+    <main>
+      <section id="config_form">
+        <div id="config">
+          <form action="/otp" method="POST">
+            <a id="back_arrow" href="/index"> &larr;</a>
+            <div id="otp">
+              <label>Enter the 6 digit otp</label>
+              <input type="number" name="OTP" id="OTP" max="999999" required />
+            </div>
+            <div id="formbtn"><button>Change Password</button></div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

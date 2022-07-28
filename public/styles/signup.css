@@ -1,0 +1,8 @@
+#back_arrow{
+    margin: 0;
+    color: var(--secondary_color);
+}
+
+#back_arrow:hover{
+    cursor: pointer;
+}

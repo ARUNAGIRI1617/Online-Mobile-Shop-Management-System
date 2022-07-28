@@ -1,0 +1,28 @@
+
+  <div id="mobiles">
+    <div >
+      <ul>
+        <% for( const mobile of mobiles) {%>
+        <a href="#overlay_mobile<%= mobile.sno %>"   id="mobile<%= mobile.sno %>" class="mobile open_overlay" data-mobileno="<%= mobile.sno %>">
+         <li class="open_overlay" data-mobileno="<%= mobile.sno %>">
+          <div class="open_overlay" data-mobileno="<%= mobile.sno %>">
+          <img
+            src="<%= mobile.mobileimglink  %> "
+            alt="<%= mobile.mobilename %> "
+            data-mobileno="<%= mobile.sno %>"
+            class="open_overlay"
+          />
+          <h5 class="open_overlay" data-mobileno="<%= mobile.sno %>"><%= mobile.mobilename %></h5>
+          <p class="open_overlay" data-mobileno="<%= mobile.sno %>"><span>&#x20B9 </span><span class="mobile_price"><%= mobile.price %></span></p>
+          </div>
+         </li>
+         </a>
+         <div>
+           <form action="/cart" method="POST"><button name="remfromcart" value="<%= mobile.mobilename %>" type="submit" class="btns" id="cart_btn">Remove from cart</button>
+        <button type="button" class="btns">Buy</button></form></div>
+        <hr>
+       <% } %>
+      </ul>
+    </div>
+  </div>
+

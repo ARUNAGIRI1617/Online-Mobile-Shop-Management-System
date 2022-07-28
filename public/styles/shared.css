@@ -1,0 +1,106 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  --primary_color: rgb(29, 28, 28);
+  --secondary_color: rgb(248, 241, 241);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary_color);
+  padding: 1.5rem;
+}
+
+h1 {
+  color: var(--secondary_color);
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+main {
+  padding: 1rem;
+  background-image: url("/images/iphone13mini.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#config_form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  min-height: 100%;
+  max-height: 25rem;
+  margin: 5rem auto;
+  background-color: var(--primary_color);
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px rgba(43, 42, 42, 0.5);
+}
+
+#config form {
+  display: flex;
+  flex-direction: column;
+}
+
+#config label {
+  display: block;
+  text-align: start;
+  color: var(--secondary_color);
+  margin: 10px 0;
+}
+
+.inputdata {
+  height: 1.75rem;
+  width: 20rem;
+  box-sizing: border-box;
+  border-color: var(--primary_color);
+  padding: 5px;
+  transition: transform 0.2s ease-in;
+}
+
+.inputdata:focus {
+  border: 1px solid aqua;
+  background-color: rgb(217, 233, 233);
+  transform: scale(1.1);
+}
+
+#formbtn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#formbtn button {
+  font: inherit;
+  /* width: 8rem; */
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+#formbtn button:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.15);
+}
+
+
+#incorrect {
+  color: red;
+  margin: 0;
+}

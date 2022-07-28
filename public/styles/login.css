@@ -1,0 +1,24 @@
+
+#forgotpwd {
+  color: var(--secondary_color);
+  font-size: small;
+  margin: 10px 0;
+}
+
+#forgotpwd:hover {
+  text-decoration: underline;
+}
+
+#signup {
+  color: var(--secondary_color);
+  font-weight: 200;
+  font-size: small;
+}
+
+#signup a {
+  margin-left: 5px;
+}
+
+#signup a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+
+
+.show_pwd_container {
+    display: flex;
+    align-items: center;
+}
+
+.show_pwd {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.show_pwd_container label {
+    font-size: 0.75rem;
+    color: var(--secondary_color);
+}

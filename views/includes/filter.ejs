@@ -1,0 +1,36 @@
+<aside>
+  <form action="/index" method="POST" id="filter">
+    <div id="brands">
+      <h2>Mobile Brands</h2>
+      <div class="brandName">
+        <input type="checkbox" name="brand" id="brand1" class="brand" value="Apple" />
+        <label for="brand1">Apple</label>
+      </div>
+      <div class="brandName">
+        <input type="checkbox" name="brand" id="brand2" class="brand" value="Samsung" />
+        <label for="brand2">Samsung</label>
+      </div>
+      <div class="brandName">
+        <input type="checkbox" name="brand" id="brand3" class="brand" value="Oneplus" />
+        <label for="brand3">Oneplus</label>
+      </div>
+      <div class="brandName">
+        <input type="checkbox" name="brand" id="brand4" class="brand" value="Realme" />
+        <label for="brand4">Realme</label>
+      </div>
+      <div class="brandName">
+        <input type="checkbox" name="brand" id="brand5" class="brand" value="Redmi" />
+        <label for="brand5">Redmi</label>
+      </div>
+    </div>
+    <div id="price_range">
+      <h3>Price Range</h3>
+      <div id="min-max-price"><span>1000</span> <span>150000</span></div>
+      <input type="range" name="price" id="price" min="1000" max="150000" />
+      <div id="filter-price">
+        <span>75000</span>
+      </div>
+    </div>
+    <button type="submit" class="btns">Apply</button>
+  </form>
+</aside>
